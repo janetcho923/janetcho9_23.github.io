@@ -1,0 +1,54 @@
+~inc:header.inc~
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom style attached -->
+    <link href="css/cls.css" rel="stylesheet" type="text/css">
+<div>
+<h1 align=center>dllm on99 ic</h1>
+<h1 align=center>Welcome to internet radio!<img src="https://i.pinimg.com/originals/db/42/d3/db42d32ac9979a7d87ded8184ea3e971.gif" height=50 width=50></h1>
+<hr>
+<p>
+<form method="post" action="updatemac.htm">
+<table style="padding-left: 10px;">
+<tr><td><b>Stack Version:</b></td><td>&nbsp;</td><td>~version~</td></tr>
+<tr><td><b>Build Date:</b></td><td>&nbsp;</td><td>~builddate~</td></tr>
+<tr><td><b>MAC Address:</b></td><td>&nbsp;</td><td>
+                <input name="txtMAC" type="text" value="~config_mac~"/></td>
+                <td>
+                <input name="btnSaveMAC" type="submit" value="Save" /></td><td></td>           
+</form>
+</p>
+
+<td><img src="./Volume3bar.PNG"></td>
+<td><b>Volume:</b></td><td>&nbsp;</td><td>~volume~</td><td>/50</td><td>&nbsp;</td>
+<form method="get" action="index.htm">
+<td><input name="btnVolDown" type="submit" value="Down"></td>
+<td><input name="btnVolUp" type="submit" value="Up"></td></table>
+</tr>
+</form>
+
+<p>This is the main configuration page for the streaming MP3 Internet Radio board that you have.  It was designed to interface to Shoutcast servers, but several different HTTP based MP3 servers may also be used.
+</p>
+<hr>
+
+<form method="post" action="index.htm">
+<table style="padding-left: 10px;">
+<p><td><img src="./FolderMusic.PNG"><b>Current Station Information:</b></td>
+<tr><td>~CurrentStationName~</td></tr>
+<tr><td>~CurrentStationURL~</td></tr>
+<tr><td>~CurrentSong~</td></tr>
+</table></p>
+</form>
+
+<table style="padding-left: 10px;">
+<form method="post" action="index.htm">
+<p><td><img src="./Settings.PNG"><b>Add Radio Station Control:</b></td><td></td></tr>
+<tr><td>Feature not implemented at this time</td><td>&nbsp;</td><td></td></tr>
+<tr><td>Name:</td><td>&nbsp;</td><td><input type="text" name="name" maxlength="30"></td></tr>
+<tr><td>URL:</td><td>&nbsp;</td><td><input type="text" name="url" maxlength="159"></td></tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table></p>
+</form>
+<hr>
+<center><img src="https://media.giphy.com/media/N3xTwLRGAzPTW/giphy.gif" height=250 width=350></center>
+</div>
+~inc:footer.inc~
