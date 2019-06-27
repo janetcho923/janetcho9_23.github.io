@@ -4,3 +4,49 @@
     font-size:15px;
     font-size-adjust: 0.58;
 }
+.yellowtext{
+	color: #FFFFF8; 
+}
+.cyantext{
+	color:lightcyan;
+}
+.goldtext{
+	color:gold;
+}
+.gradienttext{ /*gradient text. */
+   background: #E5AAED; /*in case the browser didnt support :> */
+   background: -webkit-linear-gradient(#E5AAED,#FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	text-shadow: -1px -2px 2em lightblue;
+}
+
+.crossout{ /*line through*/
+	text-decoration: line-through;
+}
+.greytext{
+	color: #777777;
+}
+.bigword{
+	font-size: 40px;
+}
+.smallword{
+	font-size: 14px;
+}
+
+table{
+	width: 70%;
+	text-align: center;
+	margin: 40px 15% 40px 15%;
+}
+td, th {
+    border: 1px solid #F0CCF5;
+    text-align: center;
+    padding: 5px;
+}
+th{
+	background: #804485;
+}
+.noBorder{ /* remove cell border*/
+	border: 0;
+}
