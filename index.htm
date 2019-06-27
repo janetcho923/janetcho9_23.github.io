@@ -1,4 +1,6 @@
 ~inc:header.inc~
+<!DOCTYPE html>
+<html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Custom style attached -->
     <link href="css/cls.css" rel="stylesheet" type="text/css">
@@ -90,12 +92,13 @@
                     </div>
                   </content>
     </div>
+    <body>
 <div>
 <h1 align=center>Welcome to internet radio!<img src="https://i.pinimg.com/originals/db/42/d3/db42d32ac9979a7d87ded8184ea3e971.gif" height=50 width=50></h1>
 <hr>
 <p>
 <form method="post" action="updatemac.htm">
-<table style="padding-left: 10px;">
+<table align=left>
 <tr><td><b>Stack Version:</b></td><td>&nbsp;</td><td>~version~</td></tr>
 <tr><td><b>Build Date:</b></td><td>&nbsp;</td><td>~builddate~</td></tr>
 <tr><td><b>MAC Address:</b></td><td>&nbsp;</td><td>
@@ -111,7 +114,8 @@
 <td><input name="btnVolDown" type="submit" value="Down"></td>
 <td><input name="btnVolUp" type="submit" value="Up"></td></table>
 </tr>
-<table align=right>
+</table>
+<table align=left>
     <!--Modified-->
 <tr>
     <td><img src="./Volume3bar.PNG"></td>
@@ -120,7 +124,7 @@
     <td><input name="btnBaseDown" type="submit" value="Down"></td>
     <td><input name="btnBaseUp" type="submit" value="Up"></td></table>
     </tr>
-    
+</table>
 </form>
 
 <p>This is the main configuration page for the streaming MP3 Internet Radio board that you have.  It was designed to interface to Shoutcast servers, but several different HTTP based MP3 servers may also be used.
@@ -162,4 +166,6 @@
 <hr>
 <center><img src="https://media.giphy.com/media/N3xTwLRGAzPTW/giphy.gif" height=250 width=350></center>
 </div>
+</body>
+</html>
 ~inc:footer.inc~
