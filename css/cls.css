@@ -37,7 +37,7 @@ content {
 	left: 0;
 	height: 150%;
 	z-index: 3;
-	background: linear-gradient(to right, rgb(12, 225, 233), transparent 25%, transparent 75%, rgb(12, 225, 233));
+	background: linear-gradient(to right, rgba(12, 225, 233, .3), transparent 25%, transparent 75%, rgba(12, 225, 233, .3));
 	-webkit-transform: translateZ(100px);
 	transform: translateZ(100px);
 }
@@ -46,7 +46,7 @@ content {
 	width: 2px;
 	height: 100%;
 	position: absolute;
-	background: rgb(12, 225, 233);
+	background: rgba(12, 225, 233, .3);
 	background-size: 10px 20px;
 	top: 0;
 	-webkit-transform: rotateX(0);
@@ -464,7 +464,7 @@ content {
 	position: absolute;
 	width: 30px;
 	height: 30px;
-	background: rgb(12, 225, 233);
+	background: rgba(12, 225, 233, .3);
 	border-radius: 100%;
 	left: 50%;
 	top: -30px;
@@ -479,17 +479,17 @@ content {
 .blueprint .bar .dot2 {
 	top: auto;
 	bottom: -30px;
-	background: rgb(12, 225, 233);
+	background: rgba(12, 225, 233, .3);
 }
 
 .blueprint .bar:after,
 .blueprint .bar:before {
 	content: '';
-	box-shadow: 0 0 0 2px rgb(12, 225, 233);
+	box-shadow: 0 0 0 2px rgba(12, 225, 233, .3);
 	position: absolute;
 	width: 2px;
 	height: 2px;
-	background: rgb(12, 225, 233);
+	background: rgba(12, 225, 233, .3);
 	border-radius: 0;
 	left: 50%;
 	bottom: 0;
